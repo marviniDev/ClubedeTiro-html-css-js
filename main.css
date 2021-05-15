@@ -1,0 +1,87 @@
+:root {
+  --cor-bg-primary: #000000;
+  --cor-bg-secundary: #e99a02;
+  --cor-ft-primary: #000000;
+  --cor-ft-secundary: #ffffff;
+  --cor-ft-tertiary: #e99a02;
+  --cor-ft-placeholder: #606060;
+  --cor-ft-text: #e8e8e8;
+  --radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html,
+body,
+.root {
+  font-family: Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--cor-ft-text);
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--cor-bg-primary);
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--cor-bg-menu);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
