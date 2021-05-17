@@ -403,6 +403,10 @@
   right: 1em;
 }
 
+.lSAction > a {
+  z-index: 0 !important;
+}
+
 .slide-curso div .sobre-curso {
   height: 13em;
   display: flex;
