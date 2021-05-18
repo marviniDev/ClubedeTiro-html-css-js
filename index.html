@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css" type="text/css" />
+  <link rel="stylesheet" href="./layout.css" type="text/css" />
   <link rel="stylesheet" href="./home.css" type="text/css" />
   <link type="text/css" rel="stylesheet" href="./assets/lightslider-master/src/css/lightslider.css" />
   <!-- <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
@@ -34,12 +35,12 @@
       <li class="title-menu">
         <h2>Menu</h2>
       </li>
-      <li class="primary"><a href="#">INICIO</a></li>
-      <li class="primary"><a href="#">CURSOS</a></li>
-      <li class="primary"><a href="#">SOBRE</a></li>
-      <li class="primary"><a href="#">CONTATO</a></li>
-      <li class="outline"><a href="#">SEJA UM ASSOCIADO</a></li>
-      <li class="login"><a href="#">LOGIN</a></Li>
+      <li class="primary"><a class="js-scroll-trigger" href="#inicio">INICIO</a></li>
+      <li class="primary"><a class="js-scroll-trigger" href="#cursos">CURSOS</a></li>
+      <li class="primary"><a class="js-scroll-trigger" href="#sobre">SOBRE</a></li>
+      <li class="primary"><a class="js-scroll-trigger" href="contato.html">CONTATO</a></li>
+      <li class="outline"><a class="js-scroll-trigger" href="#">SEJA UM ASSOCIADO</a></li>
+      <li class="login"><a href="#login">LOGIN</a></Li>
       <div class="button-close-menu">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#fff" />
@@ -53,7 +54,7 @@
     </div>
   </nav>
 
-  <div class="carrossel">
+  <div class="carrossel" id="inicio">
     <div class="slider" data_index="0">
       <div>
         <div class="box">
@@ -142,7 +143,7 @@
     </ul>
   </div>
 
-  <div class="cursos">
+  <div class="cursos" id="cursos">
     <div class="titulo">
       <h2>Cursos</h2>
     </div>
@@ -329,7 +330,7 @@
     </div>
   </div>
 
-  <div class="informacoes">
+  <div class="informacoes" id="sobre">
     <div class="apresentacao">
       <div class="titulo">
         <h1>Conheça o Clube de Tiro Brasil!</h1>
@@ -470,10 +471,10 @@
       <div class="container">
         <h3>Links Rápidos</h3>
         <ul class="links">
-          <li>Inicio</li>
-          <li>Sobre</li>
-          <li>Cursos</li>
-          <li>Contato</li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre</li>
+          <li><a href="#cursos">Cursos</li>
+          <li><a href="contato.html">Contato</li>
         </ul>
       </div>
     </div>
@@ -489,6 +490,8 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="./assets/lightslider-master/src/js/lightslider.js"></script>
   <script src="./scripts.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </body>
 
 </html>

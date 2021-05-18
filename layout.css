@@ -1,0 +1,328 @@
+/*----------CABEÇALHO DO SITE---------- */
+.header {
+  background-color: var(--cor-bg-primary);
+  height: 5.125em;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  padding: 0em 3.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .button-open-menu {
+  display: none;
+}
+
+.header .button-close-menu {
+  display: none;
+}
+
+.header .button-login-mobile {
+  display: none;
+}
+
+/* .header .container-header {
+  width: 100%;
+  padding: 0em 3.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo .titulo {
+  color: #ffffff;
+}
+
+/*----------MENU DO CABEÇALHO---------- */
+.menu-horizontal.menu-active {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.menu-horizontal.menu-close {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(-115%);
+    transform: translateX(-115%);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(-115%);
+    transform: translateX(-115%);
+  }
+}
+
+.menu-horizontal li {
+  display: inline-block;
+  text-align: left;
+  margin: 0.5em 0.5em;
+  padding: 0.5em 1em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875em;
+  cursor: pointer;
+}
+
+.menu-horizontal .title-menu {
+  position: relative;
+  margin-bottom: 1em;
+  display: none;
+}
+
+.menu-horizontal .title-menu:after {
+  content: '';
+  position: absolute;
+  left: 1em;
+  bottom: -0.2em;
+  height: 0.3em;
+  background-color: #fff;
+  width: 2em;
+  border-radius: 0.3em;
+}
+
+.menu-horizontal li a {
+  color: #ffffff;
+}
+
+.menu-horizontal li.primary a:hover {
+  color: var(--cor-ft-tertiary);
+}
+
+.menu-horizontal li.outline {
+  margin-left: 1em;
+  border: 0.125em solid var(--cor-ft-text);
+  border-radius: var(--radius20px);
+  background-color: transparent;
+}
+
+.menu-horizontal li.outline:hover {
+  border: 0.125em solid var(--cor-ft-tertiary);
+}
+
+.menu-horizontal li.login {
+  margin-left: 1em;
+  padding: 0.8em 2.4em;
+  font-size: 0.75em;
+  border-radius: var(--radius20px);
+  background-color: var(--cor-ft-tertiary);
+}
+
+.menu-horizontal li.login:hover {
+  transition: 0.3s ease-in;
+  background-color: orange;
+}
+
+/* .actions ul li {
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 100%;
+  margin: 0em 0.3em;
+  background-color: #ffffff;
+} */
+
+/*----------RODAPÉ DO SITE---------- */
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0em 2em;
+  background-color: #202020;
+  color: var(--cor-ft-text);
+  font-size: 1.1em;
+}
+
+.rodape .container-flex {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-flex .container {
+  width: 24em;
+  padding: 1.5em 1em;
+}
+.container p {
+  font-size: 1em;
+  margin: 1em 0em;
+}
+.container h3 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.container .logo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hastag {
+  color: var(--cor-ft-tertiary);
+}
+
+.container .contatos {
+  margin-bottom: 1em;
+}
+
+.container .contatos p {
+  margin: 0;
+}
+
+.container .social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social .social-container {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-ft-text);
+  margin-right: 0.5em;
+  border-radius: var(--radius20px);
+  cursor: pointer;
+}
+
+.social .social-container:hover {
+  transition: 0.3s linear;
+  background: var(--cor-ft-tertiary);
+}
+
+.container .social svg {
+  width: 1.2em;
+  fill: black;
+}
+
+.container .links {
+  width: 12.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .links li {
+  padding: 0.5em 0.5em;
+  padding-left: 0em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.container .links li a:hover {
+  transition: 0.3s linear;
+  color: var(--cor-ft-tertiary);
+}
+
+footer {
+  margin: 1em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    position: relative;
+    justify-content: space-between;
+    padding: 0em 2em;
+  }
+  .menu-horizontal {
+    position: fixed;
+    background-color: #000;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20em;
+    min-height: 100%;
+    transform: translateX(-115%);
+    z-index: 1;
+  }
+
+  .menu-horizontal li {
+    display: block;
+  }
+
+  .menu-horizontal .title-menu {
+    display: block;
+  }
+
+  .header .button-open-menu {
+    cursor: pointer;
+  }
+
+  .menu-horizontal .button-close-menu {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #000;
+    position: absolute;
+    top: 1em;
+    left: 90%;
+    cursor: pointer;
+  }
+
+  .header .button-open-menu {
+    display: block;
+  }
+
+  .header .button-close-menu {
+    display: block;
+  }
+
+  .header .button-login-mobile {
+    display: block;
+  }
+}
