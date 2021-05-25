@@ -35,6 +35,10 @@ body {
 }
 
 input,
+select{
+  border: 0;
+}
+
 button {
   border: 0;
   cursor: pointer;
