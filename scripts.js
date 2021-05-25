@@ -4,7 +4,7 @@ function $doc(elem) {
 function hasClass(el, className) {
   return el.classList
     ? el.classList.contains(className)
-    : new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+    : new RegExp('(^| )' + className + '( |$doc)', 'gi').test(el.className);
 }
 function addClass(el, className) {
   if (el.classList) {
@@ -19,13 +19,37 @@ function removeClass(el, className) {
   } else {
     el.className = el.className.replace(
       new RegExp(
-        '(^|\\b)' + className.split(' ').join('|') + '(\\b|$)',
+        '(^|\\b)' + className.split(' ').join('|') + '(\\b|$doc)',
         'gi',
       ),
       ' ',
     );
   }
 }
+
+let openMenu = document.querySelector('.button-open-menu');
+let closeMenu = document.querySelector('.button-close-menu');
+let body = document.querySelector('body');
+
+const OpenMenu = () => {
+  let menu = document.querySelector('.menu-horizontal');
+  menu.classList.remove('menu-close');
+  body.style.overflow = 'hidden';
+  menu.classList.add('menu-active');
+};
+
+const CloseMenu = () => {
+  let menu = document.querySelector('.menu-horizontal');
+  menu.classList.remove('menu-active');
+  body.style.overflow = 'auto';
+  menu.classList.add('menu-close');
+  setTimeout(() => {
+    menu.classList.remove('menu-close');
+  }, 100);
+};
+
+openMenu.addEventListener('click', OpenMenu);
+closeMenu.addEventListener('click', CloseMenu);
 
 // Todas as divs da página
 let buttonsAction = document.querySelector('.bullets');
@@ -119,6 +143,48 @@ $(document).ready(function () {
   });
 });
 
+// $('.slider-cursos').slick({
+//   variableWidth: true,
+//   arrows: false,
+//   dots: false,
+//   infinite: false,
+//   speed: 300,
+//   slidesToShow: 5,
+//   slidesToScroll: 4,
+//   centerMode: true,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         arrows: true,
+//         slidesToShow: 4,
+//         slidesToScroll: 3,
+//         infinite: true,
+//         dots: true,
+//       },
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         arrows: true,
+//         slidesToShow: 3,
+//         slidesToScroll: 2,
+//       },
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: true,
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//       },
+//     },
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ],
+// });
+
 (function ($) {
   'use strict'; // Start of use strict
 
@@ -129,7 +195,9 @@ $(document).ready(function () {
         this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
+      console.log(this);
       var target = $(this.hash);
+      console.log(target);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         anime({
@@ -154,15 +222,9 @@ $(document).ready(function () {
   // });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('a.js-scroll-trigger').click(function () {
-    let menu = document.querySelector('.menu-horizontal');
-    menu.classList.remove('menu-active');
-    body.style.overflow = 'auto';
-    menu.classList.add('menu-close');
-    setTimeout(() => {
-      menu.classList.remove('menu-close');
-    }, 100);
-  });
+  // $('.js-scroll-trigger').click(function () {
+  //   $('.navbar-collapse').collapse('hide');
+  // });
 
   // Activate scrollspy to add active class to navbar items on scroll
   // $('body').scrollspy({
