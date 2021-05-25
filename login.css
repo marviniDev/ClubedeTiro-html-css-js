@@ -55,7 +55,7 @@
 
 .containerLogin .logo {
   text-align: center;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 .containerLogin .logo img {
@@ -66,7 +66,8 @@
   display: block;
   font-size: 0.8em;
   margin-bottom: 0.4em;
-  color: #b8b8b8;
+  color: #a5a5a5;
+  font-weight: bold;
 }
 
 .containerLogin .control-group {
@@ -84,9 +85,9 @@
 }
 
 .link {
-  color: blue;
-  margin-left: 1em;
-  margin-top: 1em;
+  color: rgb(98, 98, 252);
+  margin-left: 1.5em;
+  margin-top: 5em;
   font-size: 0.8em;
 }
 
