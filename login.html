@@ -1,0 +1,187 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./images/logo.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube de Tiro | Login</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css" type="text/css" />
+  <link rel="stylesheet" href="./layout.css" type="text/css" />
+  <link rel="stylesheet" href="./login.css" type="text/css" />
+  <link type="text/css" rel="stylesheet" href="./assets/lightslider-master/src/css/lightslider.css" />
+</head>
+
+<body>
+  <nav class="header">
+    <div class="button-open-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="32px" height="48px">
+        <g id="surface50672773">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 4 10 L 4 14 L 44 14 L 44 10 Z M 4 22 L 4 26 L 44 26 L 44 22 Z M 4 34 L 4 38 L 44 38 L 44 34 Z M 4 34 " />
+        </g>
+      </svg>
+    </div>
+    <div class="logo">
+      <img src="./images/logo.png" alt="clube de tiro" />
+      <h1 class="titulo">
+        CTB
+      </h1>
+    </div>
+    <ul class="menu-horizontal">
+      <li class="title-menu">
+        <h2>Menu</h2>
+      </li>
+      <li class="primary"><a class="js-scroll-trigger" href="index.html#inicio">INICIO</a></li>
+      <li class="primary"><a class="js-scroll-trigger" href="index.html#cursos">CURSOS</a></li>
+      <li class="primary"><a class="js-scroll-trigger" href="index.html#sobre">SOBRE</a></li>
+      <li class="primary"><a class="js-scroll-trigger" href="contato.html">CONTATO</a></li>
+      <li class="outline"><a class="js-scroll-trigger" href="associado.html">SEJA UM ASSOCIADO</a></li>
+      <li class="login"><a href="login.html">LOGIN</a></Li>
+      <div class="button-close-menu">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#fff" />
+        </svg>
+      </div>
+    </ul>
+    <div class="button-login-mobile">
+      <ul>
+        <li><a href="#">LOGIN</a></Li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="spacing"></div>
+
+  <div class="containerMain">
+    <div class="bemVindo">
+      <p><span class="markup">BEM VINDO </span>AO</p>
+      <h2>SISTEMA CLUBE DE TIRO BRASIL</h2>
+      <P>Faça Login para acessar o sistema</P>
+    </div>
+    <div class="containerLogin">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Clube de Tiro Brasil">
+      </div>
+      <form class="containerForm" id="containerForm" name="sentMessage" novalidate="novalidate">
+        <div class="control-group">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input class="form-control" id="name" type="text" required="required" data-validation-required-message="Please enter your name." />
+        </div>
+        </div>
+        <div class="control-group">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" id="email" type="email" required="required" data-validation-required-message="Please enter your email address." />
+        </div>
+        </div>
+        <a class="link" href="http://">Esqueci minha senha</a>
+        <div class="button-submit"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Login</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="rodape">
+    <div class="container-flex">
+      <div class="container">
+        <div class="logo-name">
+          <img src="images/logo.png" alt="logo" />
+          <h3>Clube de Tiro Brasil</h3>
+        </div>
+        <p>
+          Somos uma solução digital, multiplataforma e completa. Feita para
+          atiradores se encontrarem.
+        </p>
+        <p class="hastag">#VEMCONHECER</p>
+      </div>
+      <div class="container">
+        <h3>Contato</h3>
+        <div class="contatos">
+          <p>Email: contato@clubetirobrasil.com.br</p>
+          <p>WhatsApp: (85) 90000-0000</p>
+        </div>
+        <div class="social">
+          <div class="social-container instagram">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M363.273,0H148.728C66.719,0,0,66.719,0,148.728v214.544C0,445.281,66.719,512,148.728,512h214.544
+               C445.281,512,512,445.281,512,363.273V148.728C512,66.719,445.281,0,363.273,0z M472,363.272C472,423.225,423.225,472,363.273,472
+               H148.728C88.775,472,40,423.225,40,363.273V148.728C40,88.775,88.775,40,148.728,40h214.544C423.225,40,472,88.775,472,148.728
+               V363.272z" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path d="M256,118c-76.094,0-138,61.906-138,138s61.906,138,138,138s138-61.906,138-138S332.094,118,256,118z M256,354
+               c-54.037,0-98-43.963-98-98s43.963-98,98-98s98,43.963,98,98S310.037,354,256,354z" />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <circle cx="396" cy="116" r="20" />
+                </g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+            </svg>
+
+          </div>
+          <div class="social-container facebook">
+            <svg id="Bold" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+      <div class="container">
+        <h3>Links Rápidos</h3>
+        <ul class="links">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#sobre">Sobre</li>
+          <li><a href="index.html#cursos">Cursos</li>
+          <li><a href="contato.html">Contato</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>© CTB 2021 | Por Objetive TI | Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="./menu.js"></script>  
+  <script src="./login.js"></script>  
+</body>
+
+</html>
